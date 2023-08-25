@@ -1,5 +1,10 @@
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <p className="text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+        eligendi?
+      </p>
+    </div>
+  );
 }
