@@ -18,19 +18,7 @@ export const LINKS: Link[] = [
   },
 ];
 
-export const ALL_LINKS: Link[] = [
-  {
-    link: "#skills",
-    text: "Skills",
-  },
-  {
-    link: "#projects",
-    text: "Projects",
-  },
-  {
-    link: "#contact",
-    text: "Contact",
-  },
+export const OTHER_LINKS: Link[] = [
   {
     link: 'https://www.linkedin.com/in/michael-bombini/',
     text: 'Linkedin'
@@ -39,5 +27,6 @@ export const ALL_LINKS: Link[] = [
     link: 'https://github.com/Michael-Bombini',
     text: 'GitHub'
   }
+
 ];
 

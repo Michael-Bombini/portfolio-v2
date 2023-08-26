@@ -1,6 +1,6 @@
 "use client";
 
-import { ALL_LINKS } from "@/shared/utilities/Links";
+import { LINKS, OTHER_LINKS } from "@/shared/utilities/Links";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -33,7 +33,7 @@ export default function NavigationMobile() {
             X
           </button>
           <ul className="flex flex-col items-center justify-between gap-16 text-2xl py-12">
-            {ALL_LINKS.map((link) => {
+            {LINKS.map((link) => {
               return (
                 <li
                   key={link.text}
@@ -51,6 +51,25 @@ export default function NavigationMobile() {
                   </Link>
                 </li>
               );
+            })}
+            {OTHER_LINKS.map((link) => {
+                 return (
+                  <li
+                    key={link.text}
+                    className="block sm:hidden w-full text-center relative after:w-0 
+                    hover:after:w-full transition-all hover:transition-all  after:h-full after:absolute 
+                    after:transition-all after:duration-500 hover:after:bg-gradient-to-r hover:after:from-blue-700/30 
+                    hover:after:to-black after:left-0 after:top-0  duration-700 py-4 text-3xl "
+                  >
+                    <Link
+                      onClick={() => setShowNavigation(!showNavigation)}
+                      className="relative z-50 text-white/70 hover:text-white transtion-all hover:transition-all"
+                      href={link.link}
+                    >
+                      {link.text}
+                    </Link>
+                  </li>
+                );
             })}
           </ul>
         </div>
