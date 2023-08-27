@@ -1,10 +1,14 @@
+import LandingArea from "@/components/section/LandingArea";
+import SkillsArea from "@/components/section/SkillsArea";
+import Wave from "@/components/util/Wave";
+
+
 export default function Home() {
   return (
-    <div>
-      <p className="text-white">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-        eligendi?
-      </p>
-    </div>
+    <>
+      <LandingArea />
+      <Wave />
+      <SkillsArea/>
+    </>
   );
 }

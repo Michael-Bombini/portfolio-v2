@@ -3,10 +3,9 @@ import Image from "next/image";
 import NavigationMobile from "./NavigationMobile";
 import { LINKS } from "@/shared/utilities/Links";
 
-
 export default function Navigation() {
   return (
-    <header className="px-4 md:px-9 py-4 text-white/80 flex justify-between items-center">
+    <header className="px-4 md:px-9 py-4 text-white/70 flex justify-between items-center bg-customBlack">
       <Link className="" href={"/"}>
         <Image
           src={"/logo.svg"}
@@ -24,7 +23,7 @@ export default function Navigation() {
             return (
               <li key={link.text}>
                 <Link
-                  className="hover:text-blue-400 transition"
+                  className="relative block hover:text-blue-400 transition-all after:content-[''] after:absolute after:inset-x-0 after:transition-all after:duration-500 after:bottom-0 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full"
                   href={link.link}
                 >
                   {link.text}
