@@ -26,7 +26,7 @@ export const SKILLS : Skill[] = [
         icon: '/skills/javascript.svg'
     },
     {
-        name: 'TailWind',
+        name: 'Tailwind',
         icon: '/skills/tailwind.svg'
     },
     {

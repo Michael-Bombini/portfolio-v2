@@ -8,7 +8,7 @@ export default function SkillsArea() {
         <p className="mt-2">These are the Technologies that i like to work with</p>
         <div className="max-w-md md:max-w-6xl mx-auto grid grid-cols-3 lg:grid-cols-5 mt-10 px-3 gap-8 justify-items-center">
             {SKILLS.map((skill) => {
-              return <Skill name={skill.name} icon={skill.icon}/>
+              return <Skill key={skill.name} name={skill.name} icon={skill.icon}/>
             })}
         </div>
     </section>
