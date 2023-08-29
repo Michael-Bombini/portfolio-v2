@@ -1,3 +1,4 @@
+import FooterContactArea from "@/components/section/FooterContactArea";
 import LandingArea from "@/components/section/LandingArea";
 import SkillsArea from "@/components/section/SkillsArea";
 import WorksArea from "@/components/section/WorksArea";
@@ -10,8 +11,10 @@ export default function Home() {
       <LandingArea />
       <Wave />
       <SkillsArea />
-      <WaveAlternative/>
+      <WaveAlternative />
       <WorksArea />
+      <Wave />
+      <FooterContactArea />
     </>
   );
 }
