@@ -19,6 +19,7 @@ export default function WorkCard({
         alt="QMix Project"
         width={400}
         height={400}
+        loading="lazy"
         className={`md:h-52 w-full rounded-md ${index === length ? 'md:h-96 lg:h-52 object-cover' : ''}`}
       />
       <h3 className="mt-2 text-2xl text-white/90 font-semibold">{title}</h3>

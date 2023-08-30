@@ -2,10 +2,20 @@
 
 import { LINKS, OTHER_LINKS } from "@/shared/utilities/Links";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NavigationMobile() {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
+
+  useEffect(() => {
+    showNavigation
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "visible");
+
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, [showNavigation]);
 
   return (
     <div className="block md:hidden">
@@ -53,23 +63,23 @@ export default function NavigationMobile() {
               );
             })}
             {OTHER_LINKS.map((link) => {
-                 return (
-                  <li
-                    key={link.text}
-                    className="block sm:hidden w-full text-center relative after:w-0 
+              return (
+                <li
+                  key={link.text}
+                  className="block sm:hidden w-full text-center relative after:w-0 
                     hover:after:w-full transition-all hover:transition-all  after:h-full after:absolute 
                     after:transition-all after:duration-500 hover:after:bg-gradient-to-r hover:after:from-blue-700/30 
                     hover:after:to-black after:left-0 after:top-0  duration-700 py-4 text-3xl "
+                >
+                  <Link
+                    onClick={() => setShowNavigation(!showNavigation)}
+                    className="relative z-50 text-white/70 hover:text-white transtion-all hover:transition-all"
+                    href={link.link}
                   >
-                    <Link
-                      onClick={() => setShowNavigation(!showNavigation)}
-                      className="relative z-50 text-white/70 hover:text-white transtion-all hover:transition-all"
-                      href={link.link}
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                );
+                    {link.text}
+                  </Link>
+                </li>
+              );
             })}
           </ul>
         </div>

@@ -35,7 +35,7 @@ export default function Navigation() {
       </nav>
       <ul className="gap-6 hidden sm:flex">
         <li>
-          <Link className="" href={"#skills"}>
+          <Link className="" href={"https://github.com/Michael-Bombini"}>
             <Image
               src={"/github.svg"}
               alt="GitHub icon"
@@ -47,7 +47,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link className="" href={"#skills"}>
+          <Link className="" href={"https://www.linkedin.com/in/michael-bombini/"}>
             <Image
               src={"/linkedin.svg"}
               alt="Linkedin icon"

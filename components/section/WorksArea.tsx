@@ -8,7 +8,7 @@ export default function WorksArea() {
       <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-center">
         Works
       </h2>
-      <p className="my-4 text-white text-center max-w-xl mx-auto">
+      <p className="my-3 text-lg text-white text-center max-w-xl mx-auto">
         Here, you can explore a selection of my developed side projects. For a
         more comprehensive list, feel free to visit my GitHub profile.
       </p>
