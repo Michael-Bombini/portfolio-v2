@@ -21,10 +21,10 @@ export default function FooterContactArea() {
             </Link>
           </div>
           <div className="w-12 h-12 border border-blue-500 rounded-full flex items-center justify-center">
-            <Link href="https://github.com/Michael-Bombini" className="p-2">
+            <Link href="https://www.linkedin.com/in/michael-bombini/" className="p-2">
               <Image
                 src="/linkedin.svg"
-                alt="GitHub icon"
+                alt="Linkedin icon"
                 width={30}
                 height={30}
                 loading="lazy"

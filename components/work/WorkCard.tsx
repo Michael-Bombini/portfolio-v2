@@ -26,7 +26,7 @@ export default function WorkCard({
       <div className="flex gap-6 mt-3 flex-wrap justify-center md:justify-start">
         {techstack.map((tech) => {
           return (
-            <span className="bg-white px-2 py-1 font-semibold text-black rounded-md">
+            <span className="bg-white px-2 py-1 font-semibold text-black rounded-md" key={tech}>
               {tech}
             </span>
           );
