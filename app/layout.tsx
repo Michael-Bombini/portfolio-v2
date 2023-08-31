@@ -3,11 +3,18 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ weight: ["400","600","700"], subsets: ["latin"] });
+const inter = Inter({ weight: ["400", "600", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Michael Bombini - FullStack Developer",
-  description: "Michael Bombini is an Italian Full Stack Developer who loves creating amazing things.",
+  description:
+    "Michael Bombini is an Italian Full Stack Developer who loves creating amazing things.",
+  robots: {
+    googleBot: {
+      index: true,
+    },
+    index: true,
+  },
 };
 
 export default function RootLayout({
