@@ -6,7 +6,7 @@ export default function ButtonDiscoverMore() {
         window.scroll(0, 600);
       }}
       className="relative inline-block text-lg group outline-none mt-4 shadow-2xl shadow-blue-500"
-      aria-aria-label="Discover More"
+      aria-label="Discover More"
     >
       <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-black transition-colors duration-300 ease-out border-2 border-blue-700 rounded-lg group-hover:text-white">
         <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>

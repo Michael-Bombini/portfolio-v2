@@ -22,6 +22,7 @@ export default function NavigationMobile() {
       <button
         onClick={() => setShowNavigation(true)}
         className="md:hidden w-8 h-8 flex flex-col justify-between items-end cursor-pointer"
+        aria-label="Open Navigation Menu"
       >
         <span className="bg-white h-0.5 w-2"></span>
         <span className="bg-white h-0.5 w-4"></span>
