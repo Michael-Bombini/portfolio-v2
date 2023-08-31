@@ -10,7 +10,6 @@ export default function LandingArea() {
           alt="michael"
           width={150}
           height={150}
-          loading="lazy"
           className="w-52 rounded-full h-52 object-cover object-top block"
         />
         <h1 className="text-center text-4xl mt-4 md:text-6xl lg:text-8xl font-bold bg-gradient-to-br from-blue-700  to-cyan-500 bg-clip-text text-transparent">
