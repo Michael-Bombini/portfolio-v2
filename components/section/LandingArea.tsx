@@ -18,7 +18,7 @@ export default function LandingArea() {
         <h2 className="text-md md:text-3xl font-bold text-white mt-2">
           FULLSTACK-DEVELOPER
         </h2>
-        <p className="text-base max-w-md text-center my-4 text-white/50">
+        <p className="text-lg max-w-md text-center my-4 text-white/50">
           I'm a FullStack Developer based in Italy, I have over 1 year of
           experience and I specialize in creating Web Apps.
         </p>
