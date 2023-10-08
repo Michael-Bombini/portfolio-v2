@@ -11,10 +11,19 @@ export interface Work {
 
 export const WORKS: Work[] = [
   {
+    image: "/projects/shoply.png",
+    title: "Shoply",
+    description: `
+    Shoply is your go-to e-commerce web app for diverse product categories. Shop conveniently, and enjoy a fantastic experience.`,
+    techstack: ["React", "TypeScript", "Redux", "Tailwind"],
+    previewLink: "https://shoply-project.vercel.app/",
+    githubLink: "https://github.com/Michael-Bombini/Shoply",
+  },
+  {
     image: "/projects/QMix.jpg",
     title: "QMix",
     description:
-      "Test your knowledge with diverse quizzes, score points, and compete on the leaderboard for fun and engagement",
+      "Test your knowledge with diverse quizzes, score points, and compete on the leaderboard for fun and engagement.",
     techstack: ["React", "TypeScript", "Firebase"],
     previewLink: "https://qmix.vercel.app/",
     githubLink: "https://github.com/Michael-Bombini/QMix",
@@ -27,13 +36,5 @@ export const WORKS: Work[] = [
     techstack: ["Vue", "Tailwind"],
     previewLink: "https://michael-bombini-countriesdata.netlify.app/",
     githubLink: "https://github.com/Michael-Bombini/countries-data",
-  },
-  {
-    image: "/projects/deliveboo.jpg",
-    title: "Deliveboo",
-    description: `
-    This web app is inspired by Deliveroo and was collaboratively developed by our team of five members.`,
-    techstack: ["Vue", "Laravel", "Bootstrap", "SQL"],
-    githubLink: "https://github.com/proj-65-team4/DeliverBoo4/tree/dev",
   },
 ];
